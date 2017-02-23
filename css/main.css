@@ -1,0 +1,199 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('../img/waterfall_in_the_valley_by_amdpastrana-d97cszf.jpg');
+
+    /* Full height */
+    height: 30%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: 'Shoguns_Clan';
+    src: url('../Shoguns_Clan.ttf'); /*URL to font*/
+}
+
+
+
+/* Menü */
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    position: relative;
+    background-color: #2c3e50;
+    z-index: 7;
+    font-family: Shoguns_Clan;
+}
+.menu li {
+    float: left;
+    width: 25%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.menu a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    font-size: 18px;
+    z-index: 9;
+}
+li.slider {
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 8;
+    -webkit-transition: left 0.4s, background-color 0.4s;
+    transition: left 0.4s, background-color 0.4s;
+}
+.menu li:nth-child(1):hover ~ .slider,
+.menu li:nth-child(1):focus ~ .slider,
+.menu li:nth-child(1):active ~ .slider {
+    left: 0;
+    background-color: #3498db;
+}
+.menu li:nth-child(2):hover ~ .slider,
+.menu li:nth-child(2):focus ~ .slider,
+.menu li:nth-child(2):active ~ .slider {
+    left: 25%;
+    background-color: #9b59b6;
+}
+.menu li:nth-child(3):hover ~ .slider,
+.menu li:nth-child(3):focus ~ .slider,
+.menu li:nth-child(3):active ~ .slider {
+    left: 50%;
+    background-color: #e67e22;
+}
+.menu li:nth-child(4):hover ~ .slider,
+.menu li:nth-child(4):focus ~ .slider,
+.menu li:nth-child(4):active ~ .slider {
+    left: 75%;
+    background-color: #16a085;
+}
+
+
+/* Focim */
+.box1 {
+    background-color:;
+}
+
+h1 {
+    text-align: center;
+    font-family: Shoguns_Clan;
+    color: #B5495B;
+    font-size: 50px;
+
+}
+p {
+   text-align: center;
+    font-family: Shoguns_Clan;
+    color: #86473F;
+    font-size: 25px;
+}
+
+
+/* About részleg */
+.box2 {
+    background-color: #86473F;
+}
+
+h2 {
+    text-align: center;
+    font-family: Shoguns_Clan;
+    color: #D19826;
+}
+
+/* Portfolio */
+.box3 {
+    background-color: #C1693C;
+}
+
+h3 {
+    text-align: center;
+    font-family: Shoguns_Clan;
+    color: #DAC9A6;
+}
+
+/* Contact */
+
+.box4 {
+    background-color: #C1693C;
+}
+
+h4 {
+    text-align: center;
+    font-family: Shoguns_Clan;
+    color: #DAC9A6;
+}
