@@ -7,14 +7,17 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/main.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/smoothscroll.js"></script>
+        <script type="text/javascript" src="myScript.js"></script>
     </head>
     <body>
     <div class="row">
     <ul class="menu parallax">
         <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#aboutme" class="smoothScroll">About</a></li>
+        <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
+        <li><a href="#icons" class="smoothScroll">Contact</a></li>
         <li class="slider"></li>
     </ul>
     </div>
@@ -22,38 +25,142 @@
     <div class="parallax"></div>
     <div class="container-fluid box1 parallax">
     <div class="row">
-        <div class="col-xs-12">
-            <div class="row">
                 <div class="col-xs-12">
                     <h1 class="text-center">Bohut Gergely</h1>
-                    <p class="text-center">Sitebuilding kurzus</p>
+                    <p class="text-center paragraf">Sitebuilding kurzus</p>
+                </div>
+                <div id="myBio" class="col-lg-12">
+                    <img class="img-responsive img-circle" src="img/profilee.gif" alt="Personal Photo">
+                </div>
+    </div>
+    </div>
+    <div class="parallax"></div>
+
+    <section id="aboutme">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h4 class="h4">ABOUT ME</h4>
+                    <h5 class="szoveg">Gergely Bohut</h5>
+                    <p class="szoveg">Baking up code - Like a boss</p>
+                    <p class="szoveg">213 years experience - of being a coding don</p>
+                    <p class="szoveg">Can build responsive websites - on a calculator</p>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
+    </section>
+
     <div class="parallax"></div>
 
-    <div id="about" class="row box2">
-        <h2 class="text-center">About Me</h2>
-        <ol>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-        </ol>
+    <div class="parallax">
+        <h6>Skills</h6>
+        <ul class="skills">
+            <li id="megjelenes" class="skill" aria-label="html">HTML</li>
+            <li id="megjelenes" class="skill" aria-label="css">CSS</li>
+            <li id="megjelenes" class="skill" aria-label="javascript">JAVASCRIPT</li>
+        </ul>
     </div>
+
     <div class="parallax"></div>
 
-    <div id="portfolio" class="row box3">
-        <h3 class="text-center">Portfolio</h3>
+    <div id="portfolio" class="box3">
+        <h3>Portfolio</h3>
+        <a class="kepek" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg02.jpg">
+            <figure>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg02.jpg" alt="">
+                <figcaption>
+                    Lorem ipsum dolor sit amet.
+                </figcaption>
+            </figure>
+        </a>
+        <a class="kepek" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg02.jpg">
+            <figure>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg02.jpg" alt="">
+                <figcaption>
+                    Lorem ipsum dolor sit amet.
+                </figcaption>
+            </figure>
+        </a>
+        <a class="kepek" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg03.jpg">
+            <figure>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg03.jpg" alt="">
+                <figcaption>
+                    Lorem ipsum dolor sit amet.
+                </figcaption>
+            </figure>
+        </a>
+        <a class="kepek" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg04.jpg">
+            <figure>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg04.jpg" alt="">
+                <figcaption>
+                    Lorem ipsum dolor sit amet.
+                </figcaption>
+            </figure>
+        </a>
+        <a class="kepek" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg05.jpg">
+            <figure>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg05.jpg" alt="">
+                <figcaption>
+                    Lorem ipsum dolor sit amet.
+                </figcaption>
+            </figure>
+        </a>
+        <a class="kepek" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg06.jpg">
+            <figure>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg06.jpg" alt="">
+                <figcaption>
+                    Lorem ipsum dolor sit amet.
+                </figcaption>
+            </figure>
+        </a>
+        <a class="kepek" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg07.jpg">
+            <figure>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg07.jpg" alt="">
+                <figcaption>
+                    Lorem ipsum dolor sit amet.
+                </figcaption>
+            </figure>
+        </a>
+        <a class="kepek" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg08.jpg">
+            <figure>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg08.jpg" alt="">
+                <figcaption>
+                    Lorem ipsum dolor sit amet.
+                </figcaption>
+            </figure>
+        </a>
     </div>
+
     <div class="parallax"></div>
 
-    <div id="contact" class="row box4">
-        <h4 class="text-center">Contact</h4>
+    <div class="btn-container parallax">
+        <a href="mailto:gergely.bohut@innonic.com" class="btn center">Contact Me</a>
     </div>
-    <div class="parallax"></div>
+
+    <div class="container">
+    <div class="row parallax">
+    <div id="icons">
+        <a href="#">
+            <img title="Pinterest" alt="Pinterest" src="https://socialmediawidgets.files.wordpress.com/2014/03/13_pinterest.png" width="35" height="35" />
+        </a>
+        <a href="https://www.facebook.com/bohutgergely">
+            <img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" width="35" height="35" />
+        </a>
+        <a href="https://www.linkedin.com/in/gergely-bohut-8275a6127/">
+            <img title="LinkedIn" alt="LinkedIn" src="https://socialmediawidgets.files.wordpress.com/2014/03/07_linkedin.png" width="35" height="35" />
+        </a>
+    </div>
+    </div>
+    </div>
+
+    <footer class="text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; bgergely
+                    </div>
+                </div>
+            </div>
+    </footer>
     </body>
 </html>
