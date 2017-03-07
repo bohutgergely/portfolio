@@ -1,8 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -49,13 +44,10 @@ body, html {
 }
 
 .parallax {
-    /* The image used */
     background-image: url('../img/waterfall_in_the_valley_by_amdpastrana-d97cszf.jpg');
 
-    /* Full height */
-    height: 30%;
+    height: 40%;
 
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -64,16 +56,13 @@ body, html {
 
 @font-face {
     font-family: 'Shoguns_Clan';
-    src: url('../Shoguns_Clan.ttf'); /*URL to font*/
+    src: url('../Shoguns_Clan.ttf');
 }
-
-
 
 /* Menü */
 
 .menu {
     list-style: none;
-    margin: 0;
     padding: 0;
     width: 100%;
     height: 50px;
@@ -146,7 +135,6 @@ li.slider {
 
 /* Focim */
 .box1 {
-    background-color:;
 }
 
 h1 {
@@ -156,25 +144,148 @@ h1 {
     font-size: 50px;
 
 }
-p {
-   text-align: center;
+.paragraf {
+    text-align: center;
     font-family: Shoguns_Clan;
     color: #86473F;
     font-size: 25px;
 }
-
+.img-responsive {
+    height: 130px;
+    width: 130px;
+    position: relative;
+    left: 53%;
+    overflow: hidden;
+    margin-left: -100px
+}
 
 /* About részleg */
-.box2 {
-    background-color: #86473F;
+#aboutme {
+    height: 70vh;
+    padding-top: 50px;
+    text-align: center;
+    background: #B5495B;
+    top: 300px;
 }
 
-h2 {
+#aboutme h4 {
+    letter-spacing: 12px;
+    font-size: 3em;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    color: #ffffff;
+    font-family: Shoguns_Clan;
+}
+
+#aboutme .szoveg {
+    line-height: 40px;
+    vertical-align: middle;
+    color: #ffffff;
+}
+
+/* Skillek */
+
+.skillek{
+    background-color: #B5495B;
+}
+
+h6 {
+    font-size: 60px;
+    font-family: Shoguns_Clan;
+    color: #e67e22;
+    text-align: center;
+}
+
+.skills {
+    list-style: none;
+    font-size: 20px;
+    padding: 0;
+    color: #e67e22;
     text-align: center;
     font-family: Shoguns_Clan;
-    color: #D19826;
+    font-size: 30px;
+}
+.skills .skill {
+    display: block;
+    position: relative;
+    height: 60px;
+    margin: 10px auto;
+    width: 90%;
+}
+@media only screen and (min-width: 900px) {
+    .skills .skill {
+        display: inline-block;
+        width: 25%;
+        margin: 10px;
+    }
+}
+.skills .skill:before, .skills .skill:after {
+    content: "";
+    position: absolute;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+.skills .skill:before {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+    background: #ffffff;
+}
+.skills .skill:after {
+
+    background: repeating-linear-gradient( #e67e22 10px, #e67e22 10px, #e67e22 20px);
+    height: 16px;
+    top: 2px;
+    right: 95%;
+    bottom: 2px;
+    left: 2px;
+    -webkit-animation: fill 2s both;
+    -moz-animation: fill 2s both;
+    animation: fill 2s both;
+}
+.skills .skill:nth-child(1):after {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.skills .skill:nth-child(2):after {
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    animation-delay: 2s;
+}
+.skills .skill:nth-child(3):after {
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    animation-delay: 3s;
 }
 
+.skills .skill[aria-label="css"]:after {
+    right: 40%;
+}
+.skills .skill[aria-label="html"]:after {
+    right: 30%;
+}
+.skills .skill[aria-label="javascript"]:after {
+    right: 70%;
+}
+
+@-webkit-keyframes fill {
+    from {
+        right: 100%;
+    }
+}
+@-moz-keyframes fill {
+    from {
+        right: 100%;
+    }
+}
+@keyframes fill {
+    from {
+        right: 100%;
+    }
+}
 /* Portfolio */
 .box3 {
     background-color: #C1693C;
@@ -184,16 +295,120 @@ h3 {
     text-align: center;
     font-family: Shoguns_Clan;
     color: #DAC9A6;
+    font-size: 30px;
 }
 
-/* Contact */
-
-.box4 {
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     background-color: #C1693C;
 }
 
-h4 {
+.kepek {
+    display: inline-block;
+    margin-bottom: 8px;
+    width: calc(50% - 4px);
+    text-decoration: none;
+    color: #ffffff;
     text-align: center;
-    font-family: Shoguns_Clan;
-    color: #DAC9A6;
 }
+
+@media screen and (min-width: 50em) {
+    .kepek {
+        width: calc(25% - 6px);
+    }
+}
+
+.kepek:hover img {
+    transform: scale(1.15);
+}
+
+figure {
+    margin: 0;
+    overflow: hidden;
+}
+
+figcaption {
+    margin-top: 15px;
+}
+
+img {
+    border: none;
+    max-width: 100%;
+    height: auto;
+
+    transition: transform .2s ease-in-out;
+}
+
+
+/* Contact */
+
+.btn-container {
+    padding: 100px;
+}
+
+.btn {
+    position: relative;
+    display: block;
+    max-width: 300px;
+    padding: 10px 20px;
+    color: #e67e22;
+    font-size: 24px;
+    font-family: Shoguns_Clan;
+    text-align: center;
+    text-decoration: none;
+    border: 3px solid #e67e22;
+    overflow: hidden;
+    -webkit-transition: color 150ms ease-in-out 150ms, border-color 300ms ease-out, box-shadow 300ms ease-in-out;
+    transition: color 150ms ease-in-out 150ms, border-color 300ms ease-out, box-shadow 300ms ease-in-out;
+    z-index: 1;
+}
+.btn.center {
+    margin: 0 auto;
+}
+.btn:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e67e22;
+    z-index: -1;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: -webkit-transform 300ms ease-out 200ms;
+    transition: -webkit-transform 300ms ease-out 200ms;
+    transition: transform 300ms ease-out 200ms;
+    transition: transform 300ms ease-out 200ms, -webkit-transform 300ms ease-out 200ms;
+}
+.btn:hover {
+    color: white;
+    border-color: #ffffff;
+    box-shadow: 0 0 16px rgba(255, 255, 255, 0.1);
+}
+
+.btn:hover:after {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transition: -webkit-transform 300ms ease-out;
+    transition: -webkit-transform 300ms ease-out;
+    transition: transform 300ms ease-out;
+    transition: transform 300ms ease-out, -webkit-transform 300ms ease-out;
+}
+
+/* social ikonok és copyright */
+
+#icons {display: table; margin: 0 auto;}
+
+footer {
+    padding: 25px 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
